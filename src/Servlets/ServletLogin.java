@@ -34,8 +34,9 @@ public class ServletLogin extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-	}
+		request.getRequestDispatcher("/login.jsp").forward(request, response);
+    } 
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -54,7 +55,7 @@ public class ServletLogin extends HttpServlet {
             ResultSet = PreparedStatement.executeQuery() ;
             if(ResultSet.next()){
                 request.setAttribute("username", username);
-                this.getServletContext().getRequestDispatcher("/WEB-INF/welcome.jsp").forward(request, response) ; 
+                this.getServletContext().getRequestDispatcher("welcome.jsp").forward(request, response) ; 
             }}
             catch (SQLException e) {
     			e.printStackTrace();	

@@ -7,8 +7,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
     <title>Insert title here</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="./WEB-INF/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./WEB-INF/css/style.css" />
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./static/css/style.css" />
 </head>
 
 <body>
@@ -34,11 +34,11 @@
                 
                 </form>
             </div>
-            <a href="#" class="text-center new-account">Create an account </a>
+            <a href="register.jsp" class="text-center new-account">Create an account </a>
         </div>
     </div>
 </div>
-<script src="./WEB-INF/js/jquery.min.js"></script>
-<script src="./WEB-INF/js/bootstrap.min.js" ></script>
+<script src="./static/js/jquery.min.js"></script>
+<script src="./static/js/bootstrap.min.js" ></script>
 </body>
 </html>
