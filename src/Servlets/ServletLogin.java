@@ -46,6 +46,7 @@ public class ServletLogin extends HttpServlet {
 		doGet(request, response);
 		String username=request.getParameter("username") ; 
         String userpassword = request.getParameter("userpassword") ;
+        // Todo: handle SQL Injection 
         String query = "SELECT * FROM Users WHERE username=? AND password=?" ; 
         
         try {
